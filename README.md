@@ -1,17 +1,36 @@
-# quran_explorer2
+# Al-Qur'an Explorer
 
-A new Flutter project.
+Aplikasi mobile berbasis Flutter yang berfungsi untuk menjelajahi 114 surah Al-Qur'an dan membaca detail ayat. Aplikasi ini dibangun untuk memenuhi tugas Ujian Tengah Semester (UTS) mata kuliah Pemrograman Mobile.
 
-## Getting Started
+## Deskripsi Singkat
+Al-Qur'an Explorer mengambil data secara dinamis (real-time) dari API publik EQuran.id v2.0. Pengguna dapat melihat daftar seluruh surah, mencari surah berdasarkan nama atau nomor, serta membaca detail ayat yang dilengkapi dengan teks Arab, teks latin, dan terjemahan bahasa Indonesia.
 
-This project is a starting point for a Flutter application.
+## Fitur Utama
+- **Daftar 114 Surah:** Menampilkan seluruh surah beserta informasi nomor, nama latin, arti, dan jumlah ayat.
+- **Pencarian Surah:** Fitur pencarian *real-time* untuk memudahkan pengguna menemukan surah tertentu.
+- **Detail Surah:** Menampilkan daftar ayat dengan format teks Arab (rata kanan), teks latin, dan terjemahan bahasa Indonesia.
+- **Penanganan Asynchronous:** Menampilkan indikator *loading* saat mengambil data, serta pesan *error* dan tombol "Coba Lagi" jika koneksi internet terputus.
 
-A few resources to get you started if this is your first Flutter project:
+## Teknologi dan Package yang Digunakan
+- **Framework:** Flutter (Dart)
+- **HTTP Client:** [`http`](https://pub.dev/packages/http) (v1.2.0) - Digunakan untuk melakukan HTTP Request ke API.
+- **API:** [EQuran.id API v2.0](https://equran.id/apidev/v2) - Penyedia data Al-Qur'an digital.
+- **State Management:** Menggunakan `FutureBuilder` bawaan Flutter untuk menangani state pengambilan data (Loading, Success, Error).
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## Langkah Menjalankan Aplikasi
+Jika Anda ingin menjalankan aplikasi ini di komputer lokal Anda, ikuti langkah berikut:
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+1. Pastikan Flutter SDK sudah terinstal di komputer Anda.
+2. Clone repositori ini:
+   ```bash
+   git clone https://github.com/didansehat/quran_explorer
+3. Masuk ke direktori project:
+    ```bash
+    cd quran_explorer2
+4. Unduh semua dependensi:
+     ```bash
+    flutter pub get
+
+5. Jalankan aplikasi (pastikan emulator atau perangkat fisik sudah terhubung):
+     ```bash
+    flutter run
