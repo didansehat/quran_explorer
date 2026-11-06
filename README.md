@@ -26,7 +26,7 @@ Jika Anda ingin menjalankan aplikasi ini di komputer lokal Anda, ikuti langkah b
    git clone https://github.com/didansehat/quran_explorer
 3. Masuk ke direktori project:
     ```bash
-    cd quran_explorer2
+    cd quran_explorer
 4. Unduh semua dependensi:
      ```bash
     flutter pub get
